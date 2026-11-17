@@ -1,2 +1,10 @@
-# OBSCURE: Object-Based Semantic Classifier and User-driven Redaction Engine
-OBSCURE is a command-line tool for selectively redacting regions of video according to natural- language descriptions.
+# OBSCURE
+
+OBSCURE will be a command-line tool for selectively redacting video.
+
+```sh
+make
+obscure video.mp4
+```
+
+The input must contain a video stream. FFmpeg decodes it to packed RGB24 frames. The pipeline passes the frames to the a backend.
